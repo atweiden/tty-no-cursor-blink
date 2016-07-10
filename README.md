@@ -5,8 +5,7 @@ Usage
 -----
 
 ```bash
-cp tty-no-cursor-blink.service /usr/lib/systemd/system
-systemctl enable tty-no-cursor-blink
+cp tty-no-cursor-blink.conf /etc/tmpfiles.d
 ```
 
 
