@@ -1,0 +1,9 @@
+[Unit]
+Description=tty-no-cursor-blink: disable tty cursor blinking
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/echo 0 > /sys/class/graphics/fbcon/cursor_blink
+
+[Install]
+WantedBy=multi-user.target
